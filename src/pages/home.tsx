@@ -7,12 +7,12 @@ import Footer from '../components/footer'
 
 const Home = () => {
   return (
-    <div>
+    <div className='flex flex-col'>
       <NavBar />
-      <div id='inicio' className='flex flex-col justify-center md:flex-row min-h-screen'>
-        <Info />
-        <Counter />
-      </div>
+      <Counter />
+      <div id='inicio' className='border w-3/4 mx-auto' />
+      <Info />
+      <div id='ubicacion' className='border mx-6 border-tertiary' />
       <MapUbication />
       <Contact />
       <Footer />

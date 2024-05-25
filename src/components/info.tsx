@@ -2,8 +2,8 @@ import Logo from '../assets/logo.png'
 
 const Info = () => {
   return (
-    <div className='flex flex-col justify-center items-center p-4 w-full '>
-      <img className='h-80' src={Logo} alt='Logo brupets' />
+    <div className='flex-col px-4 mt-16 w-full min-h-screen'>
+      <img className='h-80 mx-auto' src={Logo} alt='Logo brupets' />
       <p className='text-lg mt-4 text-justify max-w-xl'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
         vitae excepturi eius vel distinctio nisi corrupti asperiores illo sequi

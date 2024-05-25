@@ -41,23 +41,28 @@ const Counter = () => {
   }, [])
 
   return (
-    <div className='flex flex-col justify-center items-center w-full min-h-96 bg-tertiary/25'>
-      <span className='text-6xl text-secondary font-bold pb-14'>
-        ¡Próximamente!
+    <div className='flex flex-col justify-center items-center w-full my-4 bg-white'>
+      <span className='text-xl font-semibold text-secondary'>
+        ¡Abriremos pronto!
       </span>
-      <div className='flex border border-primary shadow-lg'>
+      <div className='flex border border-primary shadow-lg mt-4'>
         {Object.keys(timeLeft).map((key) => (
           <div
-            className='flex flex-col items-center border p-4 border-primary w-30 h-full'
+            className='flex flex-col items-center border p-4 rounded-sm border-primary w-30'
             key={key}
           >
-            <span className='font-extrabold text-5xl text-tertiary'>
+            <span className='font-extrabold text-4xl text-tertiary'>
               {timeLeft[key as keyof TimeLeft]}
             </span>
-            <span className='font-semibold uppercase text-auxiliar'>{key}</span>
+            <span className='uppercase font-semibold text-sm text-auxiliar'>
+              {key}
+            </span>
           </div>
         ))}
       </div>
+      <a href='#ubicacion' className='text-customBlue hover:text-customBlue/70 mt-4'>
+        ¡Aquí estamos!
+      </a>
     </div>
   )
 }

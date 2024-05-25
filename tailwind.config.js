@@ -9,9 +9,6 @@ export default {
         tertiary: '#F26B1D',
         auxiliar: '#9EBF26',
         customBlue: '#1EB7D9'
-      },
-      fontFamily: {
-        alegreya: ['Alegreya', 'sans-serif']
       }
     }
   },
