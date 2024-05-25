@@ -59,7 +59,7 @@ const NavBar = () => {
           </li>
           <li>
             <a
-              href='#acerca'
+              href='#acerca-de'
               className='block py-2 px-4 text-gray-700 rounded hover:bg-gray-200 md:hover:bg-transparent'
             >
               Acerca de

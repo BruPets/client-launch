@@ -41,7 +41,7 @@ const Counter = () => {
   }, [])
 
   return (
-    <div className='flex flex-col justify-center items-center w-full my-4 bg-white'>
+    <div id='inicio' className='flex flex-col justify-center items-center w-full my-4 bg-white'>
       <span className='text-xl font-semibold text-secondary'>
         ¡Abriremos pronto!
       </span>

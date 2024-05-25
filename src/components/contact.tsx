@@ -1,11 +1,11 @@
 const Contact = () => {
   return (
-    <section id='contacto' className='h-screen'>
-      <div className='py-8 px-4 mx-auto max-w-screen-md'>
-        <h2 className='mb-4 text-4xl tracking-tight font-extrabold text-secondary text-center '>
+    <section className='h-screen'>
+      <div className='py-6 px-10 mx-auto bg-gray-50 rounded-lg shadow-lg max-w-screen-md'>
+        <h2 className='mb-4 text-2xl tracking-tight font-extrabold text-secondary text-center '>
           Contacto
         </h2>
-        <p className='mb-8 lg:mb-16 font-light text-center text-primary sm:text-xl'>
+        <p className='mb-8 font-light text-justify text-tertiary '>
           Si tienes un problema técnico o quieres enviar un comentario sobre una funcionalidad beta, no dudes en contactarnos. Estamos aquí para ayudarte.
         </p>
         <form action='#' className='space-y-8'>
@@ -55,7 +55,7 @@ const Contact = () => {
           </div>
           <button
             type='submit'
-            className='py-3 px-5 text-sm font-medium text-center rounded-lg bg-tertiary sm:w-fit hover:bg-secondary/45 focus:ring-4 focus:outline-none'
+            className='py-3 px-5 text-sm font-medium text-center rounded-lg bg-auxiliar  hover:bg-auxiliar/45 focus:ring-4 focus:outline-none'
           >
             Enviar
           </button>

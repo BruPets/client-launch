@@ -1,9 +1,14 @@
+import Logo from '../assets/logo.png'
+
 const Footer = () => {
   return (
     <footer>
       <div className='mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8'>
         <div className='sm:flex sm:items-center sm:justify-between'>
-          <div className='text-4xl text-secondary font-black'>BRUPET'S</div>
+          <div className='self-center flex  text-2xl font-black text-secondary'>
+            <img className='h-12 mr-3' src={Logo} alt='Logo Brupets' />
+            BRUPET'S
+          </div>
 
           <ul className='mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end'>
             <li>
@@ -11,7 +16,7 @@ const Footer = () => {
                 href='https://web.facebook.com/dairo.garcia.12139/'
                 rel='noreferrer'
                 target='_blank'
-                className='text-gray-700 transition hover:opacity-75'
+                className='text-secondary transition hover:opacity-75'
               >
                 <span className='sr-only'>Facebook</span>
 
@@ -35,7 +40,7 @@ const Footer = () => {
                 href='#'
                 rel='noreferrer'
                 target='_blank'
-                className='text-gray-700 transition hover:opacity-75'
+                className='text-secondary transition hover:opacity-75'
               >
                 <span className='sr-only'>Instagram</span>
 
@@ -59,7 +64,7 @@ const Footer = () => {
                 href='#'
                 rel='noreferrer'
                 target='_blank'
-                className='text-gray-700 transition hover:opacity-75'
+                className='text-secondary transition hover:opacity-75'
               >
                 <span className='sr-only'>TikTok</span>
 
@@ -167,10 +172,10 @@ const Footer = () => {
             <ul className='mt-6 space-y-4 text-sm'>
               <li>
                 <a
-                  href='#'
+                  href='#contacto'
                   className='text-gray-700 transition hover:opacity-75'
                 >
-                  Contact
+                  Contacto
                 </a>
               </li>
 
