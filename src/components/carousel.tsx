@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
 
+interface Image {
+  alt: string;
+  href: string;
+}
 interface CarouselProps {
-  images: string[];
+  images: Image[];
 }
 
 const Carousel: React.FC<CarouselProps> = ({ images }) => {
@@ -26,15 +30,15 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
           className='flex transition-transform duration-500'
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          {images.map((image, index) => (
+          {images.map((image) => (
             <div
-              key={index}
+              key={image.alt}
               className='w-full flex-shrink-0 flex items-center justify-center'
             >
               <img
-                src={image}
-                alt={`Slide ${index}`}
-                className='w-9/12 object-cover'
+                src={image.href}
+                alt={image.alt}
+                className='w-9/12 object-cover max-w-56'
               />
             </div>
           ))}
