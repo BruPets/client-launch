@@ -1,4 +1,12 @@
+import React from 'react'
+
 const Contact = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const formData = new FormData(e.currentTarget)
+    console.log(formData)
+  }
+
   return (
     <section className='h-screen'>
       <div className='py-6 px-10 mx-auto bg-gray-50 rounded-lg shadow-lg max-w-screen-md'>
@@ -6,9 +14,9 @@ const Contact = () => {
           Contacto
         </h2>
         <p className='mb-8 font-light text-justify text-tertiary '>
-          Si tienes un problema técnico o quieres enviar un comentario sobre una funcionalidad beta, no dudes en contactarnos. Estamos aquí para ayudarte.
+          Si tienes un problema técnico o quieres hacer una consulta, no dudes en contactarnos. Estamos aquí para ayudarte.
         </p>
-        <form action='#' className='space-y-8'>
+        <form onSubmit={handleSubmit} className='space-y-8'>
           <div>
             <label
               htmlFor='email'

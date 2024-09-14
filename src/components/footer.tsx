@@ -13,7 +13,7 @@ const Footer = () => {
           <ul className='mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end'>
             <li>
               <a
-                href='https://web.facebook.com/dairo.garcia.12139/'
+                href='https://www.facebook.com/profile.php?id=61560426941764'
                 rel='noreferrer'
                 target='_blank'
                 className='text-secondary transition hover:opacity-75'
@@ -37,7 +37,7 @@ const Footer = () => {
 
             <li>
               <a
-                href='#'
+                href='https://www.instagram.com/brupets_tienda/'
                 rel='noreferrer'
                 target='_blank'
                 className='text-secondary transition hover:opacity-75'
@@ -61,7 +61,7 @@ const Footer = () => {
 
             <li>
               <a
-                href='#'
+                href='https://www.tiktok.com/@brupets_tienda'
                 rel='noreferrer'
                 target='_blank'
                 className='text-secondary transition hover:opacity-75'
